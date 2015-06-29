@@ -13,15 +13,12 @@ public class program1 {
 	}
 
 	public static boolean check(String s) {
-		int[] a = new int[s.length()];
+		int[] a = new int[300];
 		for(int i = 0; i < s.length(); i++) {
-			a[i]=s.charAt(i);
-		}
-		for(int i = 0; i < a.length-1; i++) {
-			for(int j = i+1; j < a.length; j++) {
-				if(a[i] == a[j]) 
-					return false;
-			}
+			if(a[s.charAt(i)]!=1)
+				a[s.charAt(i)]=1;
+			else 
+				return false;
 		}
 		return true;
 	}
