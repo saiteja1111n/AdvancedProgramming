@@ -1,7 +1,7 @@
 import java.util.*;
-public class 1{
+public class program1 {
 
-	public static void main(Stirng[] args) {
+	public static void main(String[] args) {
 		String s = "";
 		Scanner in = new Scanner(System.in);
 		s = in.nextLine();
@@ -18,9 +18,10 @@ public class 1{
 				int p = s.charAt(i);
 				int q = s.charAt(j);
 				if(p == q) 
-					return False;
+					return false;
 			}
 		}
+		return true;
 	}
 
 }
