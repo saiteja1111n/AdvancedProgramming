@@ -13,10 +13,10 @@ public class program1 {
 	}
 
 	public static boolean check(String s) {
-		int[] a = new int[300];
+		boolean[] a = new boolean[300];
 		for(int i = 0; i < s.length(); i++) {
-			if(a[s.charAt(i)]!=1)
-				a[s.charAt(i)]=1;
+			if(!a[s.charAt(i)])
+				a[s.charAt(i)]=true;
 			else 
 				return false;
 		}
